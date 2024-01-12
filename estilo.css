@@ -1,0 +1,186 @@
+body {
+	font-family: 'Noto Serif Balinese', serif;
+	background-color: #eee3;
+	overflow-X: hidden;
+}
+
+header {
+	background-color: #58b3e7aa;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	padding: 15px;
+}
+
+.listaOpciones {
+	margin-bottom: 30px;
+}
+
+.listaOpciones ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	text-decoration: underline;
+}
+
+.listaOpciones ul li {
+	cursor: pointer;
+	margin: 20px;
+}
+
+.listaOpciones ul li:hover {
+	transform: scale(1.1);
+	color: #8080ff;
+}
+
+.listaOpciones h2, .opciones h3 {
+	padding: 30px;
+}
+
+.sectionRespuesta article h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.exitoso {
+	color: #6fe15e;
+}
+
+.fallo {
+	color: #f34c4c;
+}
+
+.opciones article {
+	background-color: #0066ff22;
+}
+
+.listaTarjetas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+
+.informacionTarjetasAcumuladas {
+	text-align: center;
+	padding: 15px;
+	line-height: 2;
+}
+
+.listaTarjetas li {
+	margin-bottom: 30px;
+}
+
+.listaTarjetas figure, .listaTarjetas img {
+	width: 70vw;
+}
+
+figcaption {
+	text-align: center;
+}
+
+.totalAcumulado {
+	margin: 10px;
+	text-align: center;
+}
+
+.ingresar, .alta, .eliminar {
+	margin: 20px;
+	max-width: 500px;
+}
+
+.ingresar form, .alta form, .eliminar form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.ingresar input, .alta input, .eliminar input {
+	margin: 20px 0;
+	padding: 5px;
+	font-size: 20px;
+	border: none;
+	background: linear-gradient(transparent, #45f4);
+	outline: none;
+	border-bottom: 2px solid #000;
+}
+
+.ingresar button, .alta button, .eliminar button {
+	margin: 10px;
+	font-size: 18px;
+	padding: 10px 10px 5px 10px;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+	background-color: #87f7f6;
+}
+
+@keyframes click {
+	to {
+		transform: scale(0.9);
+		background-color: #87a5f7;
+	}
+}
+
+.ingresar button:hover {
+	animation-name: click;
+	animation-duration: 0.5s;
+}
+
+.alta button:hover {
+	animation-name: click;
+	animation-duration: 0.5s;
+}
+
+.ocultar {
+	display: none;
+}
+
+footer {
+	text-align: center;
+	background-color: #000d;
+	color: #ccc;
+	padding: 20px;
+}
+
+footer a {
+	color: #ccc;
+}
+
+@media only screen and (min-width: 650px) {
+	.ingresar, .alta, .eliminar {
+		margin: auto;
+	}
+
+	.listaTarjetas {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.listaTarjetas li {
+		width: 320px;
+	}
+
+	.listaTarjetas li img, .listaTarjetas li figure {
+		width: 300px;
+	}
+
+	.listaTarjetas .informacionTarjetasAcumuladas {
+		width: 80vw;
+	}
+
+	footer {
+		margin-top: 30px;
+	}
+}

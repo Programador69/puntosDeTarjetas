@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&family=Noto+Serif+Gujarati&family=Oswald&family=Roboto:ital@1&display=swap" rel="stylesheet">
+	<title>Puntos de tarjetas</title>
+</head>
+<body>
+
+	<header>
+		<h1>Calcula tus puntos en cada tarjeta</h1>
+	</header>
+
+	<main>
+		<section class="listaOpciones">
+			<article>
+				<h2>Opciones:</h2>
+				<ul>
+					<li class="botonEliminar">Eliminar Tarjeta</li>
+					<li class="botonAcumulado">Acumulado</li>
+					<li class="botonMonto">Ingresar monto</li>
+					<li class="botonTarjeta">Añadir tarjeta</li>
+				</ul>
+			</article>
+		</section>
+
+		<section class="sectionRespuesta">
+			<article>
+				<h3 class="respuesta ocultar"></h3>
+			</article>
+		</section>
+
+		<section class="opciones">
+			<article class="eliminar ocultar">
+				<h3>Eliminar una tarjeta</h3>
+				<form>
+					<label for="inputEliminarTarjeta">Pon el numero de la tarjeta que quieres eliminar</label>
+					<input type="number" class="tarjetaEliminar" id="inputEliminarTarjeta">
+
+					<button class="botonEliminarTarjeta">Eliminar</button>
+				</form>
+			</article>
+
+			<article class="acumulado ocultar">
+				<h3>Conocer lo que llevo acumulado</h3>
+				<ul class="listaTarjetas">
+				</ul>
+			</article>
+
+			<article class="ingresar ocultar">
+				<h3>Ingresar nueva compra</h3>
+
+				<form>
+					<label for="inputTarjetaUsada">Pon el numero de la tarjeta que usaste</label>
+					<input type="number" class="numeroTarjeta" id="inputTarjetaUsada">
+
+					<label for="inputMontoRealizado">Pon el monto total que gastaste con la tarjeta</label>
+					<input type="number" class="nuevoMonto" id="inputMontoRealizado">
+
+					<button class="botonNuevoMonto">Añadir</button>
+				</form>
+			</article>
+
+			<article class="alta ocultar">
+				<h3>Ingresar nueva tarjeta</h3>
+
+				<form>
+					<label for="inputNuevaTarjeta">Pon el numero de la nueva tarjeta</label>
+					<input type="number" class="numeroNuevaTarjeta" id="inputNuevaTarjeta">
+
+					<label for="inputMeta">Pon la meta (cuanto cuesta la anualidad)</label>
+					<input type="number" class="metaTarjeta" id="inputMeta">
+
+					<label for="inputPorcentaje">Pon el porcentaje de puntos que te da por cada compra</label>
+					<input type="number" class="porcentajeCompra" id="inputPorcentaje">
+
+					<label for="inputPuntos">Cuantos puntos de tu tarjeta equivalen a 1 peso</label>
+					<input type="number" class="puntosPorPeso" id="inputPuntos">
+
+					<button class="botonNuevaTarjeta">Registrar</button>
+				</form>
+
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<h5>Todos los derechos reservados <a href="https://www.instagram.com/tecnologia_hux/">Tecnología Hux</a></h5>
+	</footer>
+
+<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>
